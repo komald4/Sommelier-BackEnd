@@ -46,8 +46,10 @@ ActiveRecord::Schema.define(version: 2020_05_21_195450) do
   create_table "wines", force: :cascade do |t|
     t.string "name"
     t.string "img"
+    t.string "video"
     t.integer "year"
     t.string "category"
+    t.string "ABV"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
