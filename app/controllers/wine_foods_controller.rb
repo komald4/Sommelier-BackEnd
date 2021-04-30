@@ -13,11 +13,9 @@ class WineFoodsController < ApplicationController
         end
 
     def destroy
-        wine_food = WineFood.find(params[:id])
-        food_wine.destroy
+        wine_foods = WineFood.find(params[:id])
+        wine_foods.destroy
         render json: wine_foods, except: [:updated_at, :created_at]
-
-        
     end
 
   
